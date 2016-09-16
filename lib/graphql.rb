@@ -68,6 +68,8 @@ require "graphql/analysis_error"
 require "graphql/invalid_null_error"
 require "graphql/query"
 require "graphql/internal_representation"
+# TODO: rename
+require "graphql/static_analysis"
 require "graphql/static_validation"
 require "graphql/version"
 require "graphql/relay"
