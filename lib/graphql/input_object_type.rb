@@ -87,5 +87,11 @@ module GraphQL
 
       GraphQL::Query::Arguments.new(input_values)
     end
+
+    # @param [String] Name for an argument on this input
+    # @return [GraphQL::Argument, nil] The argument for that name, if it's defined
+    def get_argument(name)
+      arguments[name]
+    end
   end
 end
