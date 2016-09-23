@@ -44,6 +44,10 @@ module GraphQL
     def on_operation?
       locations.include?(QUERY) && locations.include?(MUTATION) && locations.include?(SUBSCRIPTION)
     end
+
+    def get_argument(name)
+      arguments[name]
+    end
   end
 end
 
